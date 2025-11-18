@@ -3,7 +3,7 @@
     flex-direction: row;
     margin-top: 2%; 
     padding: 30px;
-    border-radius: 6px;
+    border-radius: 5px;
     width: 100%;
     height: 71%;
     margin-left: -2.5%;
@@ -14,12 +14,12 @@
 
 .main-content.blue{
     background-color: #0c5ccc70;
-    box-shadow: 0 0 5px #88a8ff91;
+    box-shadow: 0 0 7px #88a8ff91;
 }
 
 .main-content.purple {
     background-color: #4906cd80;
-     box-shadow: 0 0 5px #b980fb86;
+     box-shadow: 0 0 7px #b980fb86;
 }
 
 .banner-container {

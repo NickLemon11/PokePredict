@@ -8,9 +8,9 @@ import './App.css'
 
 function App() {
   const [page, setPage] = useState("home");
-
   return ( 
     <>
+
     <BrowserRouter>
       <div className="menu"> {/* if page is equal to home then add active to the classname else don't*/}
         <Link to="/home">
@@ -28,12 +28,12 @@ function App() {
         </Link>
       </div> 
       <Routes>
-          <Route path="/home" element={<Home />} />
           <Route path="/play" element={<Play />} />
           <Route path="/guide" element={<Guide />} />
           <Route path="/credits" element={<Credits />} />
         </Routes>
 
+      {page == "home" ? <Home/> : <></>}
         <Link to="/play">
           <button id="launch" className={`menu-button ${page === "home" ? "" : "hidden"}`} onClick={() => setPage("play")}>LAUNCH</button>
         </Link>
