@@ -7,7 +7,7 @@ import "./credits.css";
 export default function Credits() {
     return (
     <>
-    <div className="main-content">CREDITS</div>
+    <div className="main-content" id="credits">CREDITS</div>
     <div className="socials"> 
           <a target="_blank" href="https://www.instagram.com/nikola._.dimitrov/"><img className="logo-app" src={instagram} width="30"/></a>
           <a target="_blank" href="https://www.linkedin.com/in/nikola-dimitrov-907a30368/"><img className="logo-app" src={linkedIn} width="30"/></a>

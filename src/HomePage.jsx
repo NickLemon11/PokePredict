@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./home.css";
 import { useState, useEffect} from 'react'
 import homebanner1 from "./assets/home_banner.webp";
@@ -33,6 +34,9 @@ export default function Home() {
             <div className="home-text">
                 <h1 className="game-title">Battle Predictor</h1>
                 <p className= "text-game">Poké Predict aids you during Pokémon battles by predicting the optimal move to take. This program takes into account all the variables present in a match of Pokémon, from STAB moves to terrain conditions. Outpredict your opponents with our tool and learn how to play like a pro. We recommend using our tool with the online battle simulator <u><a target="_blank" href="https://play.pokemonshowdown.com/">Pokemon Showdown</a></u>.</p>
+                <Link to="/PokePredict/play">
+                  <button className="menu-button" id="launch">LAUNCH</button>
+                </Link>  
             </div>      
         </div>
     </>

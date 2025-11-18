@@ -4,7 +4,9 @@ import "./play.css";
 export default function Play() {
     return (
     <>
-      <div className="main-content">PLAY</div>
+      <div className="main-content" id="play-content">Poke
+      </div>
+      <div className="bottom-content"></div>
     </>
     );
 }
