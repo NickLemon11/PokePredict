@@ -1,0 +1,7 @@
+.socials {
+  position: relative;
+  top: -6%;
+  left: -0.7%;
+  display:flex;
+  gap: 7px;
+}
