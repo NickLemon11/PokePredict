@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { PokemonSelect } from "./PokemonSelect"
 import "./play.css";
 
 export default function Play() {
-    return (
+
+  return (
     <>
-      <div className="main-content" id="play-content">Poke
-      </div>
+    <div className="user-pokemon">
+      <PokemonSelect/>
+      <PokemonSelect />
+    </div>
+    <div className="user-pokemon" id="pok-spacer">
+      <PokemonSelect/>
+      <PokemonSelect />
+    </div>
+      <div className="user-pokemon" id="pok-spacer">
+      <PokemonSelect/>
+      <PokemonSelect />
+    </div>
+
       <div className="bottom-content"></div>
     </>
-    );
+  );
 }

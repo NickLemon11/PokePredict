@@ -19,7 +19,7 @@ export default function Home() {
         setColor("blue");
       }
      
-    }, 6000); 
+    }, 4000); 
 
     return () => clearInterval(interval); // cleanup on unmount
   })
