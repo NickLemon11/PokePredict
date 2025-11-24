@@ -129,17 +129,6 @@ button:focus-visible {
   font-family: rogfontfull;
 }
 
-/* footer {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2%;
-  padding: 5px;
-  width: 120%;
-  height: 8%;
-  margin-left: -10%;
-  background-color: rgb(35, 35, 35);
-} */
-
 .logo-app {
   border-radius: 10px;
   transition: all 300ms ease;

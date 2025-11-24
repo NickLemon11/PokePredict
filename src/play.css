@@ -1,11 +1,11 @@
 /* MAIN CONTAINER */
 #play-content {
-    background-color: rgba(255, 255, 255, 0.25);
-    width: 80%;
-    height: 45%;
+    background-color: rgba(207, 221, 253, 0.585);
+    width: 40vw;
+    height: 36vh;
     margin: 40px auto;
     padding: 20px;
-    box-shadow: 0 0 7px #000;
+    box-shadow: 0 0 10px #000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,55 +15,69 @@
 }
 
 /* ---------------------- Pokemon Select --------------------- */
+.top-section {
+    width: 89%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 7%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 500ms ease
+}
 
-/* LEFT SIDE (MOVES) */
+.show {
+    display:block;
+}
+
+.hide {
+    display:none;
+}
+
+/* TOP SECTION (input + button) */
+.top-section.blue {
+    background-color: rgba(79, 138, 255, 0.971); 
+}
+
+.top-section.red {
+    background-color: rgba(255, 82, 79, 0.971);
+}
+
 .left-side {
     background-color: rgba(255, 255, 255, 0.71);
-     box-shadow: 0 0 6px #000;
+    box-shadow: 0 0 5px #000;
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+    height: 33.3vh;
+    width: 15vw;
 }
 
-/* MOVE CONTAINER */
 .container-moves {
     width: 75%;
-    position: relative;
-    margin-top: 10px;
-
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     padding: 0px;
-    gap: 10px;
+    gap: 7px;
     border-radius: 10px;
+    height: 100%;
 }
 
-/* RIGHT SIDE (TYPING + IMAGE) */
-.right-side {
+.middle-side {
     background-color: rgba(255, 255, 255, 0.71);
-     box-shadow: 0 0 6px #000;
+    box-shadow: 0 0 5px #000;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 8px;
+    padding: 0.5vw;
     gap: 14px;
     border-radius: 10px;
-}
-
-/* TOP SECTION (input + button) */
-.top-section {
-    background-color: rgba(79, 255, 149, 0.971);
-    width: 90%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-bottom: 12px;
-    padding: 10px;
-    border-radius: 10px;
+    height: 34vh;
 }
 
 /* INPUTS */
@@ -73,29 +87,26 @@
     background-color: #131313;
     color: #fff;
     border: 1px solid #2a2a2a;
-    border-radius: 12px;
+    border-radius: 8px;
     outline: none;
     font-size: 16px;
     padding: 8px;
     transition: all 0.2s ease;
 }
 
-/* Pokemon input */
 .input-pokemon {
     width: 100%;
-    height: 100%;
 }
 
-/* Type */
 .input-type {
     text-align: center;
-    width: 92%;
+    width: 13.88vw;
+    height: 3vh; 
 }
 
-/* Move input – FIXED */
 .input-move {
-    width: 100%;
-    margin-bottom: 5px;
+    height: 50%;
+    width: 120%;
 }
 
 input::placeholder {
@@ -125,31 +136,59 @@ input:focus {
 
 /* IMAGE WRAPPER */
 .image-wrapper {
+    margin-top: -2%;
     background-color: #131313;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 10px;
-    transition: transform 300ms ease, box-shadow 300ms ease;
-    height: 220px;
-    width: 100%;
+    height: 27vh;
+    width: 15vw;
 }
 
 .image-pokemon {
-    width: 100%;
-    height: 100%;
+    height: 55%;
     object-fit: contain;
+}
+
+.stats-content {
+    background-color: rgba(255, 255, 255, 0.71);
+    box-shadow: 0 0 6px #000;
+    display:flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 20%;
+    padding: 8px;
+}
+
+.individual-stat {
+    color: #1c1c1c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* LEFT + RIGHT ALIGN */
+    align-items: center;
+    padding: 11px;
+    height: 2.65vh;
+    border-radius: 8px;
+    transition: all 150ms ease;
+    user-select: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.individual-stat:hover {
+    cursor: pointer;
+    background-color: rgb(246, 244, 244);
 }
 
 /* ---------------------- DROP DOWN --------------------- */
 .dropdown {
     position: absolute;
-    top: 87%;
-    left: 7%;
+    top: 96%;
+    left: 8%;
     background: #1c1c1c;
-    width: 95%;
+    width: 118%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     z-index: 10;
@@ -167,10 +206,9 @@ input:focus {
     border-bottom-right-radius: 8px;
 }
 
-
 /* ---------------------- PLAY PAGE --------------------- */
 
-.user-pokemon {
+.pokemon-info {
     display: flex;
     flex-direction: row;
     gap: 2%;
@@ -179,8 +217,6 @@ input:focus {
 #pok-spacer {
     margin-top: -5%;
 }
-
-
 
 /* BOTTOM SPACING FIX */
 .bottom-content {
